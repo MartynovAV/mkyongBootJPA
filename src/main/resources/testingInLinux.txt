@@ -1,0 +1,17 @@
+$ mvn spring-boot:run
+
+INFO  com.mkyong.StartApplication - Started StartApplication in 2.79 seconds (JVM running for 10.883)
+INFO  com.mkyong.StartApplication - StartApplication...
+
+findAll()
+DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPoolZZZ - Reset (readOnly) on connection conn0: url=jdbc:h2:mem:testdb user=SA
+Book{id=1, name='Java'}
+Book{id=2, name='Node'}
+Book{id=3, name='Python'}
+
+findById(1L)
+DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPoolZZZ - Reset (readOnly) on connection conn0: url=jdbc:h2:mem:testdb user=SA
+Book{id=1, name='Java'}
+
+findByName('Node')
+Book{id=2, name='Node'}
